@@ -17,6 +17,10 @@
     line-height: 1em;
 }
 
+div, span {
+  display: inline-block;
+}
+
 .topnav {
     background-color: #333;
     overflow: hidden;
