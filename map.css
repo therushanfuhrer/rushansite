@@ -17,8 +17,9 @@
     line-height: 1em;
 }
 
-div, span {
-  display: inline-block;
+span {
+    display: inline-block;
+    margin: 100px;
 }
 
 .topnav {
