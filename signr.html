@@ -34,12 +34,36 @@
         <a href="sign.html">Bank</a>
         <a href="realclock.html">Weather and Time</a>
       </div>
-    <h1 class = fancy>Sign In</h1>
+    <h1 class = fancy>Sign In (Beta)</h1>
     <p class = text>If you are a Rushan citizen, then you have received your credentials.</p>
     <p class = fancy>Name</p>
-    <input id=pass type=text>
+    <input id=nam type=text>
     <p class = fancy>Password</p>
     <input id=pass type=text>
+    <button id=enter onClick=logIn()>Log In</button>
+    <br><br>
+    <p id=prof>Log in to see your profession.</p>
+    <p id=mon>Log in to see your current money.</p>
+    <p id=bank>Log in to see the amount of money in your bank account.</p>
+
+    <script>
+      function logIn() {
+          const name = document.getElementById("nam");
+          const secr = document.getElementById("pass");
+          if (name.value == "Krishna Sankara" &&& secr.value == "rushanfuhrer") {
+              document.getElementById('prof').innerText("You are the Rushan Fuhrer.")
+          }
+          if (name.value == "Josiah Ratitouille" &&& secr.value == "1929427") {
+              document.getElementById('prof').innerText("You are the Kvasseater of Selakia.")
+          }
+          if (name.value == "Iris Haggerty" &&& secr.value == "1929429") {
+              document.getElementById('prof').innerText("You are the Kvasseater of Moslandia.")
+          }
+          if (name.value == "Anh Hoang" &&& secr.value == "1929469") {
+              document.getElementById('prof').innerText("You are the Secretary of War.")
+          }
+      }
+    </script>
 </body>
   
 </html>
