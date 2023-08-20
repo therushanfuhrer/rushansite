@@ -17,6 +17,12 @@
     line-height: 1em;
 }
 
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
 .grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
